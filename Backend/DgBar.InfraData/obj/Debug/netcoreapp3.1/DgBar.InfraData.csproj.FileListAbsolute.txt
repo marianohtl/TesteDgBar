@@ -10,3 +10,6 @@ C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\bin\Debug\netcor
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\obj\Debug\netcoreapp3.1\DgBar.InfraData.csproj.CoreCompileInputs.cache
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\obj\Debug\netcoreapp3.1\DgBar.InfraData.dll
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\obj\Debug\netcoreapp3.1\DgBar.InfraData.pdb
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\bin\Debug\netcoreapp3.1\DgBar.Domain.dll
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\bin\Debug\netcoreapp3.1\DgBar.Domain.pdb
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.InfraData\obj\Debug\netcoreapp3.1\DgBar.InfraData.csproj.CopyComplete

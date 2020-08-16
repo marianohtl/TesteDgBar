@@ -45,6 +45,8 @@ namespace DgBar.InfraData.Context
             {
                 entity.ToTable("SHEET_ORDER");
 
+                entity.Property(e => e.Id).ValueGeneratedNever();
+
                 entity.Property(e => e.Discount)
                     .HasColumnType("decimal(18, 0)")
                     .HasDefaultValueSql("((0))");
