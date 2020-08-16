@@ -7,6 +7,7 @@ namespace DgBar.Domain.Interfaces
 {
     public interface IMenuRepository
     {
-        Menu GetById(int Id);
+        Menu GetById(int? Id);
+        List<Menu> GetAllItems();
     }
 }

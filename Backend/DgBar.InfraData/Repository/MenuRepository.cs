@@ -17,10 +17,18 @@ namespace DgBar.InfraData.Repository
             this._context = context;
         }
 
-        public Menu GetById(int Id)
+        public Menu GetById(int? Id)
         {
-            return _context.Menu.Where(x => x.Id == Id).FirstOrDefault();
+            if(Id != null)
+            {
+                return _context.Menu.Where(x => x.Id == Id).FirstOrDefault();
+            }
+            return null;
         }
 
-    }
+        public List<Menu> GetAllItems() { 
+            return _context.Menu.ToList();
+        }
+
+}
 }

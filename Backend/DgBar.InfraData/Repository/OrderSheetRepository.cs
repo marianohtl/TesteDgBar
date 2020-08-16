@@ -18,11 +18,20 @@ namespace DgBar.InfraData.Repository
               this._context = context;
           }
 
-          public SheetOrder GetById(int Id)
+          public SheetOrder GetOrderById(int Id)
           {
               return _context.SheetOrder.Where(x => x.Id == Id).FirstOrDefault();
           }
 
+          public SheetOrder GetItemByIdAndOrder(int IdItem, int IdOrder)
+          {
+            return _context.SheetOrder.Where(x => x.IdMenu == IdItem && x.Id == IdOrder).FirstOrDefault();
+          }
+
+          public List<SheetOrder> GetAllOrdersById(int Id)
+          {
+            return _context.SheetOrder.Where(i => i.Id == Id).ToList();
+          }
 
           public SheetOrder Save(SheetOrder sheetOrder)
           {
@@ -57,5 +66,6 @@ namespace DgBar.InfraData.Repository
               }
               return false;
           }
+
     }
 }

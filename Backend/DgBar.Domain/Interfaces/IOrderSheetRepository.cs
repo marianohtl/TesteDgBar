@@ -7,7 +7,11 @@ namespace DgBar.Domain.Interfaces
 {
     public interface IOrderSheetRepository
     {
+        SheetOrder GetOrderById(int Id);
 
+        SheetOrder GetItemByIdAndOrder(int IdItem,int IdSheetOrder);
+
+        List<SheetOrder> GetAllOrdersById(int Id);
 
         SheetOrder Save(SheetOrder sheetOrder);
 
