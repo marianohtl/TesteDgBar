@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DH7/1+djPow+xuHJo8HT/ekgqENjkrJPQwbcYn7U8zJT9defCXqIjhswnqDpDj9xBokHkh35FIGlBI6j12MAnQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Dominio\\DgBar.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Momoh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Momoh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
