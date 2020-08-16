@@ -6420,11 +6420,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\DgBar.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\DgBar.Infra.csproj",
       "projectName": "DgBar.Infra",
-      "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\DgBar.Infra.csproj",
+      "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\DgBar.Infra.csproj",
       "packagesPath": "C:\\Users\\Momoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\obj\\",
+      "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6444,8 +6444,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj": {
-              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj"
+            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj": {
+              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj"
             }
           }
         }

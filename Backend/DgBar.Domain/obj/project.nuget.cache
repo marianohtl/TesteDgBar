@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "URNASHPjjykth3D6a+4QIlk4RLHhFAHCxhUyhQxh3f9tYQKR6Yg7R4thvXdqKrqgRnW0tVWrBwpjaE47uM5ihg==",
+  "dgSpecHash": "FMqbQ6PMGHcrkaXVVP+d263z+NXWpyuKf1dvdWbQmUoFg8sR+xyLxXi9TPi0BcLaKrftFHHYMrgzopxkmzEh1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Momoh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Momoh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

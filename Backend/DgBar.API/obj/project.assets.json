@@ -5823,11 +5823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.API\\DgBar.API.csproj",
+      "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.API\\DgBar.API.csproj",
       "projectName": "DgBar.API",
-      "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.API\\DgBar.API.csproj",
+      "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.API\\DgBar.API.csproj",
       "packagesPath": "C:\\Users\\Momoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.API\\obj\\",
+      "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5847,11 +5847,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj": {
-              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj"
+            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj": {
+              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj"
             },
-            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\DgBar.Infra.csproj": {
-              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\DgBar.Infra.csproj"
+            "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\DgBar.Infra.csproj": {
+              "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\DgBar.Infra.csproj"
             }
           }
         }

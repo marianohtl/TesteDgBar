@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj": {}
+    "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj": {
+    "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj",
         "projectName": "DgBar.Domain",
-        "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\DgBar.Domain.csproj",
+        "projectPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\DgBar.Domain.csproj",
         "packagesPath": "C:\\Users\\Momoh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

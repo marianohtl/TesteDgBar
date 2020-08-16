@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j0X7I68wgTm0NTngMOa49nkPzF5423Yv3wDzt15K3yuEq9zJmLzcy/hdixDF2ZgKgeRxIcIAgRj/qMJTqKjbQA==",
+  "dgSpecHash": "v0LMqrlTAa1+RmGgBGPAGv7r9deIb9uTCvJdFuMv9PJjOFLmkw4gYP2rPqbSD7G4ib6ZzT2Rvj6ZgXBAC1727g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend-\\DgBar.Infra\\DgBar.Infra.csproj",
+  "projectFilePath": "C:\\Users\\Momoh\\Desktop\\teste\\TesteDgBar\\Backend\\DgBar.Infra\\DgBar.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Momoh\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Momoh\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
