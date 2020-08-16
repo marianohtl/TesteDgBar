@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DgBar.Domain.Entities
 {
-    public class Menu
+    public partial class Menu
     {
+        public Menu()
+        {
+            SheetOrder = new HashSet<SheetOrder>();
+        }
+
         public int Id { get; set; }
         public string Item { get; set; }
         public decimal? Price { get; set; }
+
+        public virtual ICollection<SheetOrder> SheetOrder { get; set; }
     }
 }

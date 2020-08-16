@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DgBar.Domain\DgBar.Domain.csproj" />
-    <ProjectReference Include="..\DgBar.Infra\DgBar.Infra.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 

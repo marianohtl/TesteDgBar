@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Numerics;
-using System.Text;
 
 namespace DgBar.Domain.Entities
 {
-    public class SheetOrder
+    public partial class SheetOrder
     {
-        public BigInteger Id { get; set; }
-        public decimal? TotalPrice { get; set; }
-        public decimal? TotalDiscount { get; set; }
+        public long Id { get; set; }
+        public int? IdMenu { get; set; }
+        public int Amount { get; set; }
+        public decimal? Discount { get; set; }
 
-
-        public SheetOrder()
-        {
-            //  var random = Guid.NewGuid();
-            // Id = new BigInteger(random.ToByteArray());
-        }
-
+        public virtual Menu IdMenuNavigation { get; set; }
     }
 }
