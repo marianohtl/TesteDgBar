@@ -1,7 +1,8 @@
-﻿using System;
-using DgBar.Domain.Entities;
+﻿using DgBar.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace DgBar.InfraData.Context
 {
@@ -45,8 +46,6 @@ namespace DgBar.InfraData.Context
             {
                 entity.ToTable("SHEET_ORDER");
 
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
                 entity.Property(e => e.Discount)
                     .HasColumnType("decimal(18, 0)")
                     .HasDefaultValueSql("((0))");
@@ -62,4 +61,5 @@ namespace DgBar.InfraData.Context
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
+
 }

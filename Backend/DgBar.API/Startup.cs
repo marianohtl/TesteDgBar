@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DgBar.Domain.Entities;
+using DgBar.Domain.Interfaces;
+using DgBar.Domain.Services;
+using DgBar.InfraData.Context;
+using DgBar.InfraData.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -21,13 +26,16 @@ namespace DgBar.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<BarDGContext>();
+            services.AddScoped<IOrderManageService, OrderManageService>();
+            services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IOrderSheetRepository, OrderSheetRepository>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -40,9 +48,11 @@ namespace DgBar.API
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {
+            {   
                 endpoints.MapControllers();
             });
         }
+
+
     }
 }

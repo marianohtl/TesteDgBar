@@ -9,7 +9,7 @@ namespace DgBar.Domain.Interfaces
     {
         SheetOrder GetOrderById(int Id);
 
-        SheetOrder GetItemByIdAndOrder(int IdItem,int IdSheetOrder);
+        SheetOrder GetItemByIdAndOrder(int? IdItem,int? IdSheetOrder);
 
         List<SheetOrder> GetAllOrdersById(int Id);
 
@@ -17,7 +17,7 @@ namespace DgBar.Domain.Interfaces
 
         SheetOrder Update(SheetOrder sheetOrder);
 
-        bool Delete(int idSheetOrder);
+        bool Delete(int? idSheetOrder);
 
     }
 }

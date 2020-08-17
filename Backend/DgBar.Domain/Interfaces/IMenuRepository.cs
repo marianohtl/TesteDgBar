@@ -9,5 +9,6 @@ namespace DgBar.Domain.Interfaces
     {
         Menu GetById(int? Id);
         List<Menu> GetAllItems();
+   
     }
 }

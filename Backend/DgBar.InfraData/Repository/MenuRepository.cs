@@ -1,4 +1,5 @@
 ﻿using DgBar.Domain.Entities;
+using DgBar.Domain.Interfaces;
 using DgBar.InfraData.Context;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace DgBar.InfraData.Repository
 {
-    public class MenuRepository
+    public class MenuRepository : IMenuRepository
     {
 
         private readonly BarDGContext _context;

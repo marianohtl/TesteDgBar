@@ -8,6 +8,7 @@ namespace DgBar.Domain.ViewModels
     public class OrderViewModel
     {
         public int Id { get; set; }
+        public int IdItem { get; set; }
         public int Amount { get; set; }
         public decimal? Discount { get; set; }
         public decimal? TotalDiscount { get; set; }

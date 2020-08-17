@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DgBar.Domain\DgBar.Domain.csproj" />
+    <ProjectReference Include="..\DgBar.InfraData\DgBar.InfraData.csproj" />
   </ItemGroup>
 
 

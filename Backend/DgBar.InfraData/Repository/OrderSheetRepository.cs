@@ -20,17 +20,17 @@ namespace DgBar.InfraData.Repository
 
           public SheetOrder GetOrderById(int Id)
           {
-              return _context.SheetOrder.Where(x => x.Id == Id).FirstOrDefault();
+              return _context.SheetOrder.Where(x => x.IdOrder == Id).FirstOrDefault();
           }
 
-          public SheetOrder GetItemByIdAndOrder(int IdItem, int IdOrder)
+          public SheetOrder GetItemByIdAndOrder(int? IdItem, int? IdOrder)
           {
-            return _context.SheetOrder.Where(x => x.IdMenu == IdItem && x.Id == IdOrder).FirstOrDefault();
+            return _context.SheetOrder.Where(x => x.IdMenu == IdItem && x.IdOrder == IdOrder).FirstOrDefault();
           }
 
           public List<SheetOrder> GetAllOrdersById(int Id)
           {
-            return _context.SheetOrder.Where(i => i.Id == Id).ToList();
+            return _context.SheetOrder.Where(i => i.IdOrder == Id).ToList();
           }
 
           public SheetOrder Save(SheetOrder sheetOrder)
@@ -42,7 +42,7 @@ namespace DgBar.InfraData.Repository
 
           public SheetOrder Update(SheetOrder sheetOrder)
           {
-              var _sheetOrder = _context.SheetOrder.Where(e => e.Id == sheetOrder.Id).FirstOrDefault();
+              var _sheetOrder = _context.SheetOrder.Where(e => e.IdOrder == sheetOrder.IdOrder).FirstOrDefault();
               if (_sheetOrder != null)
               {
                   _sheetOrder.IdMenu = sheetOrder.IdMenu;
@@ -55,9 +55,9 @@ namespace DgBar.InfraData.Repository
           }
 
 
-          public bool Delete(int idSheetOrder)
+          public bool Delete(int? idSheetOrder)
           {
-              var orderItem = _context.SheetOrder.Where(i => i.Id == idSheetOrder).FirstOrDefault();
+              var orderItem = _context.SheetOrder.Where(i => i.IdOrder == idSheetOrder).FirstOrDefault();
               if (idSheetOrder != null)
               {
                   _context.Entry(orderItem).State = EntityState.Deleted;
