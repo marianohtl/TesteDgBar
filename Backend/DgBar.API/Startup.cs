@@ -4,10 +4,13 @@ using DgBar.InfraData.Context;
 using DgBar.InfraData.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System;
 
 namespace DgBar.API
@@ -23,7 +26,13 @@ namespace DgBar.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+
+            });
+         
             services.AddDbContext<BarDGContext>();
             services.AddScoped<IOrderManageService, OrderManageService>();
             services.AddScoped<IMenuRepository, MenuRepository>();
@@ -47,6 +56,11 @@ namespace DgBar.API
                 });
             });
 
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
         }
 
 
@@ -59,6 +73,7 @@ namespace DgBar.API
 
             app.UseRouting();
 
+            app.UseCors("AllowOrigin");
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>

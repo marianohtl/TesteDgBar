@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DgBar.API</name>
+    </assembly>
+    <members>
+        <member name="M:DgBar.API.Controllers.OrderController.GetMenu">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DgBar.API.Controllers.OrderController.RegistryOrder(DgBar.Domain.ViewModels.SheetOrderViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DgBar.API.Controllers.OrderController.GenerateNote(DgBar.Domain.ViewModels.OrderViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DgBar.API.Controllers.OrderController.ResetOrder(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

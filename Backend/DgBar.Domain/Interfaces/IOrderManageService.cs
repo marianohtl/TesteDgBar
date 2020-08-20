@@ -10,6 +10,7 @@ namespace DgBar.Domain.Interfaces
     {
         SheetOrder RegistryOrder(int? idSheetOrder, int? idItem);
         OrderViewModel GenerateNote(int id);
+        List<Menu> GetItensMenu();
         bool ResetOrder(int id);
     }
 }

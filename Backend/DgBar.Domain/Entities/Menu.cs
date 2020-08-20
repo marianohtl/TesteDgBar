@@ -7,7 +7,7 @@ namespace DgBar.Domain.Entities
     {
         public Menu()
         {
-            SheetOrder = new HashSet<SheetOrder>();
+            
         }
 
         public int Id { get; set; }

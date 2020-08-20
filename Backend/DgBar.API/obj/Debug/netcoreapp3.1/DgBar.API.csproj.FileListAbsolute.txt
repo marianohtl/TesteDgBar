@@ -64,6 +64,10 @@ C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\obj\Debug\netcoreapp3.1\DgBar.API.csproj.CoreCompileInputs.cache
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\obj\Debug\netcoreapp3.1\DgBar.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\obj\Debug\netcoreapp3.1\DgBar.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Momoh\Desktop\teste\TesteDgBar\Backend\DgBar.API\bin\Debug\netcoreapp3.1\DgBar.API.xml

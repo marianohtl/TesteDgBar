@@ -25,12 +25,14 @@ namespace DgBar.InfraData.Repository
 
           public SheetOrder GetItemByIdAndOrder(int? IdItem, int? IdOrder)
           {
-            return _context.SheetOrder.Where(x => x.IdMenu == IdItem && x.IdOrder == IdOrder).FirstOrDefault();
+            return _context.SheetOrder.FirstOrDefault(x => x.IdMenu == IdItem && x.IdOrder == IdOrder);
           }
 
           public List<SheetOrder> GetAllOrdersById(int Id)
           {
-            return _context.SheetOrder.Where(i => i.IdOrder == Id).ToList();
+
+            var a = _context.SheetOrder.Where(i => i.IdOrder == Id).ToList();
+            return a;
           }
 
           public SheetOrder Save(SheetOrder sheetOrder)
@@ -42,16 +44,10 @@ namespace DgBar.InfraData.Repository
 
           public SheetOrder Update(SheetOrder sheetOrder)
           {
-              var _sheetOrder = _context.SheetOrder.Where(e => e.IdOrder == sheetOrder.IdOrder).FirstOrDefault();
-              if (_sheetOrder != null)
-              {
-                  _sheetOrder.IdMenu = sheetOrder.IdMenu;
-                  _sheetOrder.Amount = sheetOrder.Amount;
-                  _sheetOrder.Discount = sheetOrder.Discount;
-                  _context.Entry(_sheetOrder).State = EntityState.Modified;
-                  _context.SaveChanges();
-              }
-              return _sheetOrder;
+              
+            _context.SheetOrder.Update(sheetOrder);
+            _context.SaveChanges();
+              return sheetOrder;
           }
 
 

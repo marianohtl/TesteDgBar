@@ -25,6 +25,32 @@ namespace DgBar.API.Controllers
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("Menu")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<SheetOrderViewModel> GetMenu()
+        {
+            var _menu = _OrderManageService.GetItensMenu();
+            if (_menu != null)
+            {
+                return Ok(_menu);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
         [HttpPost("ResgistryOrder")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -44,7 +70,11 @@ namespace DgBar.API.Controllers
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
         [HttpPost("GenerateNote")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -64,6 +94,11 @@ namespace DgBar.API.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("ResetOrder/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -81,7 +116,5 @@ namespace DgBar.API.Controllers
                 return NoContent();
             }
         }
-
-
     }
 }
