@@ -18,8 +18,6 @@ namespace DgBar.Domain.Services
             _repositoryMenu = repositoryMenu;
         }
 
-
-
         public List<Menu> GetItensMenu()
         {
             try
@@ -41,7 +39,6 @@ namespace DgBar.Domain.Services
             try
             {
 
-                //SheetOrder sheetOrder = _repositoryOrder.GetOrderById(idSheetOrder);
                 SheetOrder sheetOrderItem = _repositoryOrder.GetItemByIdAndOrder(idItem, idSheetOrder);
                 Menu menu = _repositoryMenu.GetById(idItem);
                 SheetOrder newOrderSheet = new SheetOrder();
@@ -50,6 +47,10 @@ namespace DgBar.Domain.Services
                 {
                     if (sheetOrderItem != null)
                     {
+                        if(sheetOrderItem.IdMenu == 3 && sheetOrderItem.Amount >= 3)
+                        {
+                            return sheetOrderItem;
+                        }
                         sheetOrderItem.Amount += 1;
                         _repositoryOrder.Update(sheetOrderItem);
                         return sheetOrderItem;
@@ -77,7 +78,6 @@ namespace DgBar.Domain.Services
         {
             try
             {
-
                 List<SheetOrder> orders = _repositoryOrder.GetAllOrdersById(id);
 
                 OrderViewModel note = new OrderViewModel();
@@ -85,7 +85,7 @@ namespace DgBar.Domain.Services
                 note.TotalPrice = 0;
                 note.FinalPrice = 0;
 
-                int freeWatter = 0;
+                int? freeWatter = 0;
 
 
                 int amoutBeer = 0;
@@ -110,15 +110,10 @@ namespace DgBar.Domain.Services
                             case 2:
                                 if (amoutBeer >= 2 && details.Amount >= 3)
                                 {
-                                    freeWatter += 1;
+                                    freeWatter = details.IdMenu;
                                 }
                                 break;
-                            case 4:
-                                if (freeWatter == 1)
-                                {
-                                    RegistryOrder(id, details.IdMenu);
-                                }
-                                break;
+                     
                      }
 
                         note.TotalPrice += details.Amount * item.Price;
@@ -126,11 +121,14 @@ namespace DgBar.Domain.Services
                 }
 
                 note.FinalPrice = note.TotalPrice - note.Discount;
-                if (freeWatter >=  1)
+                if (freeWatter ==  2)
                 {
-                   note.FinalPrice -= 70;
+
+                    var water = _repositoryMenu.GetById(4);
+                    if(water != null)
+                        note.Items.Add(water);
                 }
-              
+
                 return note;
             }
             catch (Exception e)
