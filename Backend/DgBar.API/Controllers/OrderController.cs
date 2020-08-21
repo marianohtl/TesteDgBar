@@ -107,6 +107,7 @@ namespace DgBar.API.Controllers
 
             if (result)
             {
+                //return StatusCode(418);
                 return Ok("Deletado com sucesso!");
             }
             else

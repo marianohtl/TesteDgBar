@@ -6,30 +6,30 @@
     <members>
         <member name="M:DgBar.API.Controllers.OrderController.GetMenu">
             <summary>
-            
+            Returns all items registered in the menu.
             </summary>
-            <returns></returns>
+            <returns> The list of menu items.</returns>
         </member>
         <member name="M:DgBar.API.Controllers.OrderController.RegistryOrder(DgBar.Domain.ViewModels.SheetOrderViewModel)">
             <summary>
-            
+            This method registers an item in the order;
             </summary>
-            <param name="order"></param>
-            <returns></returns>
+            <param name="order"> menu item id, order number id</param>
+            <returns>the registration of the menu in the order</returns>
         </member>
         <member name="M:DgBar.API.Controllers.OrderController.GenerateNote(DgBar.Domain.ViewModels.OrderViewModel)">
             <summary>
-            
+            This method generates a note with: items, discount and total values;
             </summary>
-            <param name="order"></param>
-            <returns></returns>
+            <param name="order">Order number id.</param>
+            <returns>A note </returns>
         </member>
         <member name="M:DgBar.API.Controllers.OrderController.ResetOrder(System.Int32)">
             <summary>
-            
+            This method resets all records in the database.
             </summary>
-            <param name="id"></param>
-            <returns></returns>
+            <param name="id">order id</param>
+            <returns>Response 200, with message or error.</returns>
         </member>
     </members>
 </doc>

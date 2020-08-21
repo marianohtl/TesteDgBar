@@ -7,7 +7,6 @@ addEventListener('load', () => {
 
 async function doFetchGenerateNote() {
     let body =  {id:1};
-    console.log(JSON.stringify(body))
     const url = await fetch('http://localhost:5000/api/Order/GenerateNote', {method:"post",body:JSON.stringify(body), headers:{"Content-Type":"application/json"}});
     const json = await url.json();
 
@@ -36,7 +35,6 @@ async function doRegistryOrder() {
         IdOrder:1,
         IdMenu:2
     };
-    console.log(JSON.stringify(body))
     const url = await fetch('http://localhost:5000/api/Order/ResgistryOrder', {method:"post",body:JSON.stringify(body), headers:{"Content-Type":"application/json"}});
     const json = await url.json();    
     console.log(json);

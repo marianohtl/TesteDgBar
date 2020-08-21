@@ -85,10 +85,10 @@ namespace DgBar.Domain.Services
                 note.TotalPrice = 0;
                 note.FinalPrice = 0;
 
-                int? freeWatter = 0;
 
-
-                int amoutBeer = 0;
+                int amountBeer = 0;
+                int amountWater = 0;
+                int amountConhaque = 0;
                 foreach (SheetOrder details in orders)
                 {
 
@@ -100,34 +100,33 @@ namespace DgBar.Domain.Services
 
                         switch (details.IdMenu)
                         {
+
                             case 1:
-                                amoutBeer = details.Amount;
-                                double result = amoutBeer / 5;
-                                var amoutDesc = (int)Math.Ceiling(result);
-                                var descountBeer = amoutDesc * item.Price;
-                                note.Discount += descountBeer;
+                                amountBeer = details.Amount;
+                                double result = amountBeer / 5;
+                                var amoutDesc = (int) Math.Ceiling(result);
+                                var discountBeer = amoutDesc * item.Price;
+                                note.Discount += discountBeer;
                                 break;
                             case 2:
-                                if (amoutBeer >= 2 && details.Amount >= 3)
-                                {
-                                    freeWatter = details.IdMenu;
-                                }
+                                amountConhaque = details.Amount;
                                 break;
-                     
-                     }
+                            case 4:
+                                amountWater = details.Amount;
+                                break;
+
+                        }
 
                         note.TotalPrice += details.Amount * item.Price;
                     }
                 }
 
-                note.FinalPrice = note.TotalPrice - note.Discount;
-                if (freeWatter ==  2)
+                if (amountConhaque >= 3 && amountBeer >= 2 && amountWater > 0) 
                 {
-
-                    var water = _repositoryMenu.GetById(4);
-                    if(water != null)
-                        note.Items.Add(water);
+                    note.Discount += 70;
                 }
+                note.FinalPrice = note.TotalPrice - note.Discount;
+                
 
                 return note;
             }
